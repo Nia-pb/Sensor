@@ -1,3 +1,10 @@
+
+/* Import PrimeReact themes and PrimeIcons */
+@import 'primereact/resources/themes/lara-light-indigo/theme.css'; /* Change the theme as needed */
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* Add this to App.css or your global stylesheet */
+
+/* Make the table smaller */
+.datatable-container {
+  margin: 0 auto;
+  max-width: 80%; /* Limit table width */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+/* Make the table cells and headers more compact */
+.p-datatable th, .p-datatable td {
+  padding: 6px; /* Adjust padding to make the table smaller */
+  font-size: 14px; /* Make text smaller */
+}
+
+.p-datatable {
+  border: 1px solid #ddd; /* Optional: Add a border to the table */
 }
