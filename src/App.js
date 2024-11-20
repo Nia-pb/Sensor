@@ -30,22 +30,26 @@ const App = () => {
       skipEmptyLines: true, // Skip empty lines
     });
   };
+  
 
   return (
     <div className="App">
-      <h1>Upload CSV to DataTable</h1>
+      <h1>EO-Sensor</h1>
 
       {/* File Upload Component */}
       <FileUpload
-        name="demo"
-        customUpload
-        uploadHandler={handleFileUpload}
-        accept=".csv"
-        maxFileSize={1000000}
-        chooseLabel="Choose CSV File"
-        uploadLabel="Upload"
-        cancelLabel="Cancel"
-        auto
+  name="demo"
+  customUpload
+  uploadHandler={handleFileUpload}
+  accept=".csv"
+  maxFileSize={1000000}
+  chooseLabel="Choose CSV File"
+  uploadLabel="Upload"
+  cancelLabel="Cancel"
+  auto
+  onUpload={e => console.log("Upload completed:", e)}  // Logs when upload is complete
+  onError={e => console.log("Upload error:", e)}  // Logs upload errors
+
       />
 
       {/* DataTable to display CSV data */}
@@ -54,7 +58,7 @@ const App = () => {
           <DataTable
             value={data}
             paginator
-            rows={5}
+            rows={10}
             className="p-mt-3"
             resizableColumns
             columnResizeMode="fit"
