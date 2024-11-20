@@ -1,7 +1,7 @@
 {
   "name": "prime-react-app",
   "version": "0.1.0",
-  "homepage": "https://Nia-pb.github.io/sensor",
+  "homepage": "https://nia-pb.github.io/sensor",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
