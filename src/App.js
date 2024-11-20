@@ -54,7 +54,7 @@ const App = () => {
           <DataTable
             value={data}
             paginator
-            rows={5}
+            rows={10}
             className="p-mt-3"
             resizableColumns
             columnResizeMode="fit"
